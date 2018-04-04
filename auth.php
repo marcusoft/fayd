@@ -144,27 +144,7 @@ class auth_plugin_elcentra extends auth_plugin_base {
     	if (!isset($config->googleclientsecret)) {
     		$config->googleclientsecret = '';
     	}
-    	if (!isset ($config->facebookclientid)) {
-    		$config->facebookclientid = '';
-    	}
-    	if (!isset ($config->facebookclientsecret)) {
-    		$config->facebookclientsecret = '';
-    	}
-    	if (!isset ($config->linkedinclientid)) {
-    		$config->linkedinclientid = '';
-    	}
-    	if (!isset ($config->linkedinclientsecret)) {
-    		$config->linkedinclientsecret = '';
-    	}
-    	if (!isset($config->twitterclientid)) {
-    		$config->twitterclientid = '';
-    	}
-    	if (!isset($config->twitterclientsecret)) {
-    		$config->twitterclientsecret = '';
-    	}
-    	if (!isset($config->vkclientsecret)) {
-    		$config->vkclientsecret = '';
-    	}
+    	
         if (!isset($config->add_code_mode)) {
             $config->add_code_mode = 'auto';
         }
@@ -183,38 +163,13 @@ class auth_plugin_elcentra extends auth_plugin_base {
     	if (!isset($config->googleclientsecret)) {
     		$config->googleclientsecret = '';
     	}
-    	if (!isset ($config->facebookclientid)) {
-    		$config->facebookclientid = '';
-    	}
-    	if (!isset ($config->facebookclientsecret)) {
-    		$config->facebookclientsecret = '';
-    	}
-    	if (!isset ($config->linkedinclientid)) {
-    		$config->linkedinclientid = '';
-    	}
-    	if (!isset ($config->linkedinclientsecret)) {
-    		$config->linkedinclientsecret = '';
-    	}
-    	if (!isset($config->twitterclientid)) {
-    		$config->twitterclientid = '';
-    	}
-    	if (!isset($config->vkclientid)) {
-    		$config->twitterclientid = '';
-    	}
+    	
         if (!isset($config->add_code_mode)) {
             $config->add_code_mode = 'auto';
         }
     	
     	set_config('googleclientid',    $config->googleclientid,    'auth/elcentra');
     	set_config('googleclientsecret',    $config->googleclientsecret,    'auth/elcentra');
-    	set_config('facebookclientid',    $config->facebookclientid,    'auth/elcentra');
-    	set_config('facebookclientsecret',    $config->facebookclientsecret,    'auth/elcentra');
-    	set_config('linkedinclientid',    $config->linkedinclientid,    'auth/elcentra');
-    	set_config('linkedinclientsecret',    $config->linkedinclientsecret,    'auth/elcentra');
-    	set_config('twitterclientid',    $config->twitterclientid,    'auth/elcentra');
-        set_config('twitterclientsecret',    $config->twitterclientsecret,    'auth/elcentra');
-        set_config('vkclientid',    $config->vkclientid,    'auth/elcentra');
-        set_config('vkclientsecret',    $config->vkclientsecret,    'auth/elcentra');
         set_config('add_code_mode',    $config->add_code_mode,    'auth/elcentra');
         return true;
     }
@@ -295,10 +250,7 @@ class auth_plugin_elcentra extends auth_plugin_base {
  	<!-- Elcentra content starts -->
  	<div class="moreproviderlink">
  	<a href="{$CFG->wwwroot}/auth/elcentra/google_request.php"><img src="{$CFG->wwwroot}/auth/elcentra/img/google.png"></a> <br>
- 	<a href="{$CFG->wwwroot}/auth/elcentra/facebook_request.php"><img src="{$CFG->wwwroot}/auth/elcentra/img/facebook.png"></a> <br>
- 	<a href="{$CFG->wwwroot}/auth/elcentra/twitter_request.php"><img src="{$CFG->wwwroot}/auth/elcentra/img/twitter.png"></a> <br>
- 	<a href="{$CFG->wwwroot}/auth/elcentra/linkedin_request.php"><img src="{$CFG->wwwroot}/auth/elcentra/img/linkedin.png"></a> <br>
- 	<a href="{$CFG->wwwroot}/auth/elcentra/vk_request.php"><img src="{$CFG->wwwroot}/auth/elcentra/img/vk.png"></a>
+ 	
  	</div>
  	<!-- Elcentra content ends -->
 HTML;
